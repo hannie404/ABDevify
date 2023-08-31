@@ -4,7 +4,7 @@ const NavBar = () => {
     const handleIsActive = ({ isActive }) => (isActive ? 'text-accent-500' : '');
     return (
         <>
-            <div className="space-x-10 font-nunito text-xl text-secondary-50/70">
+            <div className="hidden space-x-10 font-nunito text-xl text-secondary-50/70 md:block">
                 <NavLink className={handleIsActive} to="/">
                     Home
                 </NavLink>

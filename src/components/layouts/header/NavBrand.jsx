@@ -5,7 +5,7 @@ const NavBrand = () => {
         <>
             <Link className="block text-center" to="/">
                 <span className="block font-montserrat text-3xl font-bold leading-none text-secondary-50">
-                    PGM
+                    ABD
                 </span>
 
                 <span className="font-moondance text-[23.02px] text-lg font-thin leading-none text-accent-500">
