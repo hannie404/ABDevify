@@ -5,7 +5,7 @@ import NavBrand from './NavBrand';
 
 const Header = () => {
     return (
-        <header className="container sticky top-0 mx-auto bg-primary-950 px-4 z-10">
+        <header className="container sticky top-0 z-10 mx-auto bg-primary-950 px-4">
             <nav className="flex flex-row items-center justify-between py-10">
                 <NavBrand />
 
