@@ -10,7 +10,7 @@ const Careers = () => {
                             Careers
                         </h1>
 
-                        <div className="hidden text-2xl md:block leading-10">
+                        <div className="hidden text-2xl leading-10 md:block">
                             <p>
                                 You will be familiarized and working in a fast-paced, agile
                                 environment. Career advancement will be based on your performance
