@@ -641,24 +641,24 @@ video {
   display: none;
 }
 
-.h-8{
-  height: 2rem;
-}
-
 .h-10{
   height: 2.5rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .min-h-screen{
   min-height: 100vh;
 }
 
-.w-8{
-  width: 2rem;
-}
-
 .w-10{
   width: 2.5rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .grid-cols-\[minmax\(0\2c _1fr\)_auto\]{
@@ -687,10 +687,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -734,21 +730,20 @@ video {
   background-color: rgb(25 25 27 / var(--tw-bg-opacity));
 }
 
-.bg-zinc-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+.bg-primary-950\/60{
+  background-color: rgb(25 25 27 / 0.6);
 }
 
-.bg-primary-950\/50{
-  background-color: rgb(25 25 27 / 0.5);
+.bg-primary-900\/60{
+  background-color: rgb(59 60 63 / 0.6);
+}
+
+.bg-\[\#1E1E20\]\/60{
+  background-color: rgb(30 30 32 / 0.6);
 }
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .px-4{
@@ -815,6 +810,11 @@ video {
   font-size: 23.02px;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -828,11 +828,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -886,16 +881,6 @@ video {
   color: rgb(255 255 255 / 0.7);
 }
 
-.text-secondary-500{
-  --tw-text-opacity: 1;
-  color: rgb(124 124 124 / var(--tw-text-opacity));
-}
-
-.text-primary-500{
-  --tw-text-opacity: 1;
-  color: rgb(118 118 129 / var(--tw-text-opacity));
-}
-
 .opacity-0{
   opacity: 0;
 }
@@ -911,18 +896,13 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-secondary-50\/50{
-  --tw-shadow-color: rgb(255 255 255 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .shadow-secondary-300{
   --tw-shadow-color: #bdbdbd;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-primary-300{
-  --tw-shadow-color: #b9bac0;
+.shadow-secondary-50\/50{
+  --tw-shadow-color: rgb(255 255 255 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -942,10 +922,6 @@ video {
 
 .ring-secondary-500\/50{
   --tw-ring-color: rgb(124 124 124 / 0.5);
-}
-
-.ring-primary-500\/50{
-  --tw-ring-color: rgb(118 118 129 / 0.5);
 }
 
 .drop-shadow-lg{
@@ -1008,20 +984,20 @@ svg {
     grid-column-end: 4;
   }
 
-  .sm\:row-start-2{
-    grid-row-start: 2;
-  }
-
   .sm\:row-start-1{
     grid-row-start: 1;
   }
 
-  .sm\:row-end-3{
-    grid-row-end: 3;
+  .sm\:row-start-2{
+    grid-row-start: 2;
   }
 
   .sm\:row-end-2{
     grid-row-end: 2;
+  }
+
+  .sm\:row-end-3{
+    grid-row-end: 3;
   }
 
   .sm\:grid-cols-3{
@@ -1038,46 +1014,6 @@ svg {
 }
 
 @media (min-width: 768px){
-  .md\:col-start-1{
-    grid-column-start: 1;
-  }
-
-  .md\:col-start-2{
-    grid-column-start: 2;
-  }
-
-  .md\:col-start-3{
-    grid-column-start: 3;
-  }
-
-  .md\:col-end-2{
-    grid-column-end: 2;
-  }
-
-  .md\:col-end-3{
-    grid-column-end: 3;
-  }
-
-  .md\:col-end-4{
-    grid-column-end: 4;
-  }
-
-  .md\:row-start-1{
-    grid-row-start: 1;
-  }
-
-  .md\:row-start-2{
-    grid-row-start: 2;
-  }
-
-  .md\:row-end-2{
-    grid-row-end: 2;
-  }
-
-  .md\:row-end-3{
-    grid-row-end: 3;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1086,16 +1022,8 @@ svg {
     display: none;
   }
 
-  .md\:h-10{
-    height: 2.5rem;
-  }
-
   .md\:h-9{
     height: 2.25rem;
-  }
-
-  .md\:w-10{
-    width: 2.5rem;
   }
 
   .md\:w-9{
@@ -1110,42 +1038,12 @@ svg {
     flex-basis: 60%;
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
-  .md\:items-center{
-    align-items: center;
-  }
-
   .md\:gap-8{
     gap: 2rem;
   }
 
-  .md\:self-center{
-    align-self: center;
-  }
-
-  .md\:justify-self-start{
-    justify-self: start;
-  }
-
   .md\:text-start{
     text-align: start;
-  }
-
-  .md\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-lg{
@@ -1153,8 +1051,9 @@ svg {
     line-height: 1.75rem;
   }
 
-  .md\:leading-8{
-    line-height: 2rem;
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:leading-7{
