@@ -2,8 +2,7 @@ const Twitter = () => {
     return (
         <>
             <svg
-                width="28"
-                height="28"
+                className="h-8 w-8 md:h-9 md:w-9 lg:h-10 lg:w-10"
                 viewBox="0 0 28 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
