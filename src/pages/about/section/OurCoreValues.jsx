@@ -4,7 +4,7 @@ function OurCoreValues() {
     return (
         <div>
             <div className=" flex justify-center items-center">
-                <div>
+                <div className=''>
                     OUR
                 </div>
                 <div>CORE</div>
