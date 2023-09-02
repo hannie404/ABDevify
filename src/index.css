@@ -661,6 +661,22 @@ video {
   width: 2rem;
 }
 
+.w-full{
+  width: 100%;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
+}
+
+.basis-5\/6{
+  flex-basis: 83.333333%;
+}
+
+.basis-auto{
+  flex-basis: auto;
+}
+
 .cursor-auto{
   cursor: auto;
 }
@@ -703,6 +719,12 @@ video {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -731,6 +753,10 @@ video {
 
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-md{
@@ -763,13 +789,14 @@ video {
   padding: 1.5rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-7{
@@ -782,6 +809,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -792,23 +824,46 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .font-montserrat{
@@ -868,6 +923,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -960,6 +1020,10 @@ video {
   --tw-ring-color: rgb(255 202 0 / 0.5);
 }
 
+.ring-secondary-50\/10{
+  --tw-ring-color: rgb(255 255 255 / 0.1);
+}
+
 .ring-secondary-50\/50{
   --tw-ring-color: rgb(255 255 255 / 0.5);
 }
@@ -1032,11 +1096,6 @@ svg {
   content: var(--tw-content);
   --tw-translate-x: -20%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.before\:content-\[url\(\$\{multicircle\}\)\]::before{
-  --tw-content: url(${multicircle});
-  content: var(--tw-content);
 }
 
 .before\:content-\[url\(\/src\/assets\/images\/multicircle\.png\)\]::before{
@@ -1203,6 +1262,14 @@ svg {
     flex-basis: 60%;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-\[auto_minmax\(0\2c _1fr\)\]{
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
   .md\:gap-8{
     gap: 2rem;
   }
@@ -1251,6 +1318,11 @@ svg {
     width: 2.5rem;
   }
 
+  .lg\:-translate-y-\[25\%\]{
+    --tw-translate-y: -25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1267,9 +1339,23 @@ svg {
     gap: 4rem;
   }
 
+  .lg\:p-8{
+    padding: 2rem;
+  }
+
   .lg\:px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:text-start{
@@ -1290,9 +1376,18 @@ svg {
     font-size: 80px;
   }
 
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-6{
+    line-height: 1.5rem;
   }
 
   .lg\:leading-8{
