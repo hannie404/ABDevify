@@ -1,5 +1,11 @@
+import OurCoreValues from './section/OurCoreValues';
+
 const About = () => {
-    return <div>About</div>;
+    return (
+        <div>
+            <OurCoreValues />
+        </div>
+    );
 };
 
 export default About;
