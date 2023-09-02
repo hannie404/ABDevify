@@ -1,9 +1,10 @@
-import Hero from './sections/Hero';
+import { Hero, Testimonials } from './sections';
 
 const Home = () => {
     return (
         <>
             <Hero />
+            <Testimonials />
         </>
     );
 };
