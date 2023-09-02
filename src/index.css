@@ -1039,6 +1039,11 @@ svg {
   content: var(--tw-content);
 }
 
+.before\:content-\[url\(\/src\/assets\/images\/multicircle\.png\)\]::before{
+  --tw-content: url(/src/assets/images/multicircle.png);
+  content: var(--tw-content);
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;

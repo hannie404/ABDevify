@@ -1,11 +1,8 @@
-import { heroImage, multicircle } from '../../../assets/images';
+import { heroImage } from '../../../assets/images';
 
 const Hero = () => {
-    console.log(multicircle);
     return (
-        <section
-            className={`relative overflow-hidden px-4 py-8 before:absolute before:left-0 before:top-0 before:h-[750px] before:w-[750px] before:-translate-x-[20%] before:content-[url(${multicircle})] after:absolute after:right-0 after:top-0 after:-z-10 after:h-[1399.298px] after:w-[467px] after:-translate-y-[25%] after:rotate-[65.712deg] after:rounded-[233.5px] after:bg-gradient-to-b after:from-[rgba(251,168,28,0.11)] after:to-[rgba(224,86,136,0.06)] after:blur-[150px] after:content-['']`}
-        >
+        <section className="relative overflow-hidden px-8 py-8 before:absolute before:left-0 before:top-0 before:h-[750px] before:w-[750px] before:-translate-x-[20%] before:content-[url(/src/assets/images/multicircle.png)] after:absolute after:right-0 after:top-0 after:-z-10 after:h-[1399.298px] after:w-[467px] after:-translate-y-[25%] after:rotate-[65.712deg] after:rounded-[233.5px] after:bg-gradient-to-b after:from-[rgba(251,168,28,0.11)] after:to-[rgba(224,86,136,0.06)] after:blur-[150px] after:content-['']">
             <div className="container mx-auto">
                 <div className="grid gap-8 lg:grid-cols-2 lg:grid-rows-[auto_minmax(0,_1fr)]">
                     <div className="rows flex flex-col justify-center gap-4 text-center lg:row-start-1 lg:row-end-2 lg:text-start">
