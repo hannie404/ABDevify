@@ -13,10 +13,14 @@ import { testimonialImage } from '../../../assets/images';
 
 const Testimonials = () => {
     return (
-        <>
+        <section className="container relative mx-auto px-6">
+            <h2 className="relative text-center text-4xl font-bold leading-normal md:text-5xl lg:text-[66px] lg:leading-[70px]">
+                <span className="text-secondary-50">Employee</span> 
+                <span className="text-accent-500"> Testimonial</span>
+            </h2>
+
             <Swiper
-                tag="section"
-                className="container relative mx-auto "
+                className=""
                 modules={[Navigation, Scrollbar, A11y, Autoplay]}
                 slidesPerView={1}
                 navigation
@@ -26,7 +30,7 @@ const Testimonials = () => {
                 {new Array(6).fill(undefined).map((el, i) => (
                     <SwiperSlide
                         key={i}
-                        className="container mx-auto flex justify-center px-6 py-20 lg:py-10"
+                        className="container mx-auto flex justify-center pb-20 pt-8 lg:py-10"
                         tag="article"
                     >
                         <div className="flex w-full max-w-5xl flex-col gap-8 rounded-lg px-4 py-6 ring-2 ring-secondary-50/10 lg:flex-row lg:p-8 lg:py-16">
@@ -61,7 +65,7 @@ const Testimonials = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </>
+        </section>
     );
 };
 

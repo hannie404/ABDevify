@@ -14,7 +14,7 @@ const AboutABD = () => {
                 </div>
 
                 <div className="w-full md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:max-w-xl">
-                    <p className="text-center text-base leading-6 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:text-start md:text-xl md:leading-8 lg:text-[30px]  lg:leading-[45px]">
+                    <p className="text-center text-base leading-6 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 md:text-start md:text-xl md:leading-8 lg:text-2xl  lg:leading-[44px]">
                         BGM is an onshore software development company with offices located in
                         Makati, Quezon City, and Cebu City Philippines. We provide high-quality web
                         clients applications using leading-edge technology since 2023.
