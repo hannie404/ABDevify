@@ -576,6 +576,11 @@ video {
   }
 }
 
+.container{
+  width: 100%;
+  max-width: 1280px;
+}
+
 .relative{
   position: relative;
 }
@@ -619,6 +624,11 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mt-auto{
@@ -683,6 +693,10 @@ video {
 
 .grid-cols-\[minmax\(0\2c _1fr\)_auto\]{
   grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.grid-rows-\[repeat\(3\2c _auto\)\]{
+  grid-template-rows: repeat(3, auto);
 }
 
 .flex-row{
@@ -785,8 +799,16 @@ video {
   background-color: rgb(25 25 27 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\/src\/assets\/images\/training\.png\'\)\]{
+  background-image: url('/src/assets/images/training.png');
+}
+
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-4{
@@ -809,9 +831,14 @@ video {
   padding-right: 2rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2{
@@ -819,9 +846,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-6{
@@ -832,26 +859,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .text-center{
@@ -890,6 +897,11 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-6xl{
@@ -946,8 +958,16 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-7{
+  line-height: 1.75rem;
+}
+
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-\[70px\]{
+  line-height: 70px;
 }
 
 .leading-none{
@@ -1072,9 +1092,19 @@ svg {
   position: absolute;
 }
 
+.before\:bottom-0::before{
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
 .before\:left-0::before{
   content: var(--tw-content);
   left: 0px;
+}
+
+.before\:right-0::before{
+  content: var(--tw-content);
+  right: 0px;
 }
 
 .before\:top-0::before{
@@ -1087,15 +1117,35 @@ svg {
   height: 750px;
 }
 
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
+}
+
 .before\:w-\[750px\]::before{
   content: var(--tw-content);
   width: 750px;
+}
+
+.before\:w-full::before{
+  content: var(--tw-content);
+  width: 100%;
 }
 
 .before\:-translate-x-\[20\%\]::before{
   content: var(--tw-content);
   --tw-translate-x: -20%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-primary-950\/95::before{
+  content: var(--tw-content);
+  background-color: rgb(25 25 27 / 0.95);
+}
+
+.before\:content-\[\'\'\]::before{
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .before\:content-\[url\(\/src\/assets\/images\/multicircle\.png\)\]::before{
@@ -1238,6 +1288,38 @@ svg {
 }
 
 @media (min-width: 768px){
+  .md\:col-start-1{
+    grid-column-start: 1;
+  }
+
+  .md\:col-start-2{
+    grid-column-start: 2;
+  }
+
+  .md\:col-end-2{
+    grid-column-end: 2;
+  }
+
+  .md\:col-end-3{
+    grid-column-end: 3;
+  }
+
+  .md\:row-start-1{
+    grid-row-start: 1;
+  }
+
+  .md\:row-start-2{
+    grid-row-start: 2;
+  }
+
+  .md\:row-end-2{
+    grid-row-end: 2;
+  }
+
+  .md\:row-end-3{
+    grid-row-end: 3;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1254,6 +1336,10 @@ svg {
     width: 2.25rem;
   }
 
+  .md\:max-w-xl{
+    max-width: 36rem;
+  }
+
   .md\:basis-2\/5{
     flex-basis: 40%;
   }
@@ -1266,16 +1352,47 @@ svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-rows-\[20\%_minmax\(0\2c _1fr\)\]{
+    grid-template-rows: 20% minmax(0, 1fr);
+  }
+
   .md\:grid-rows-\[auto_minmax\(0\2c _1fr\)\]{
     grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
+  .md\:gap-6{
+    gap: 1.5rem;
   }
 
   .md\:gap-8{
     gap: 2rem;
   }
 
+  .md\:self-end{
+    align-self: flex-end;
+  }
+
   .md\:text-start{
     text-align: start;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-lg{
@@ -1291,19 +1408,15 @@ svg {
   .md\:leading-7{
     line-height: 1.75rem;
   }
+
+  .md\:leading-8{
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px){
-  .lg\:row-start-1{
-    grid-row-start: 1;
-  }
-
   .lg\:row-start-2{
     grid-row-start: 2;
-  }
-
-  .lg\:row-end-2{
-    grid-row-end: 2;
   }
 
   .lg\:row-end-3{
@@ -1323,20 +1436,16 @@ svg {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-\[auto_minmax\(0\2c _1fr\)\]{
-    grid-template-rows: auto minmax(0, 1fr);
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }
 
   .lg\:gap-16{
     gap: 4rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
   }
 
   .lg\:p-8{
@@ -1348,18 +1457,24 @@ svg {
     padding-right: 3.5rem;
   }
 
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .lg\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 
-  .lg\:text-start{
-    text-align: start;
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:text-2xl{
@@ -1370,6 +1485,14 @@ svg {
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-\[30px\]{
+    font-size: 30px;
+  }
+
+  .lg\:text-\[66px\]{
+    font-size: 66px;
   }
 
   .lg\:text-\[80px\]{
@@ -1394,11 +1517,26 @@ svg {
     line-height: 2rem;
   }
 
+  .lg\:leading-\[45px\]{
+    line-height: 45px;
+  }
+
   .lg\:leading-\[57px\]{
     line-height: 57px;
   }
 
+  .lg\:leading-\[70px\]{
+    line-height: 70px;
+  }
+
   .lg\:leading-\[84px\]{
     line-height: 84px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

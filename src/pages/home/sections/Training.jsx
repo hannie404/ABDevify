@@ -1,44 +1,39 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Navigation, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Scrollbar, A11y } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 import '../home.css';
 
 import { testimonialImage } from '../../../assets/images';
 
-const Testimonials = () => {
+const Training = () => {
     return (
-        <>
+        <section className="relative mx-auto bg-[url('/src/assets/images/training.png')] p-6 lg:p-8 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-primary-950/95 before:content-['']">
+            <h2 className="relative text-center text-4xl font-bold leading-7 md:text-5xl lg:text-[66px] lg:leading-[70px]">
+                <span className="text-secondary-50">Training</span>{' '}
+                <span className="text-accent-500">Experience</span>
+            </h2>
+
             <Swiper
-                tag="section"
-                className="container relative mx-auto "
-                modules={[Navigation, Scrollbar, A11y, Autoplay]}
+                className="container mx-auto"
+                modules={[Navigation, Scrollbar, A11y]}
                 slidesPerView={1}
                 navigation
-                autoplay
+                breakpoints={{}}
                 grabCursor={true}
             >
                 {new Array(6).fill(undefined).map((el, i) => (
                     <SwiperSlide
+                        className="container mx-auto flex justify-center lg:py-8 py-6"
                         key={i}
-                        className="container mx-auto flex justify-center px-6 py-20 lg:py-10"
                         tag="article"
                     >
-                        <div className="flex w-full max-w-5xl flex-col gap-8 rounded-lg px-4 py-6 ring-2 ring-secondary-50/10 lg:flex-row lg:p-8 lg:py-16">
-                            <div className="basis-auto text-center">
-                                <img
-                                    className="mx-auto lg:-translate-y-[25%]"
-                                    src={testimonialImage}
-                                    alt="testimonialImage"
-                                />
-                            </div>
-
-                            <blockquote className="basis-5/6 space-y-12">
+                        <div className="w-full max-w-5xl">
+                            <blockquote className="space-y-12">
                                 <p className="text-justify text-xs leading-normal lg:text-base lg:leading-6">
                                     &quot;Working at BGM has been an incredible journey of growth
                                     and innovation. The collaborative and dynamic work environment
@@ -53,16 +48,16 @@ const Testimonials = () => {
                                     website development.&quot;
                                 </p>
 
-                                <footer className="text-end text-sm font-bold lg:text-base">
-                                    - Annie, Sr Software Engineer
+                                <footer className="text-center text-sm font-bold lg:text-base">
+                                    - Annie
                                 </footer>
                             </blockquote>
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </>
+        </section>
     );
 };
 
-export default Testimonials;
+export default Training;
