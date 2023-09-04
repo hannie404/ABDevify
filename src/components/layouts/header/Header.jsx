@@ -5,15 +5,16 @@ import NavBrand from './NavBrand';
 
 const Header = () => {
     return (
-        <header className=" sticky top-0 z-10 bg-primary-950 px-8 py-6">
-            <div className="container mx-auto">
-                <nav className="flex flex-row items-center justify-between">
-                    <NavBrand />
-                    <NavBar />
-                    <InquiryButton />
-                    <MenuBar />
-                </nav>
-            </div>
+        <header className="container sticky top-0 z-10 mx-auto bg-primary-950 px-4">
+            <nav className="flex flex-row items-center justify-between py-10">
+                <NavBrand />
+
+                <NavBar />
+
+                <InquiryButton />
+
+                <MenuBar />
+            </nav>
         </header>
     );
 };
