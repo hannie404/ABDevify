@@ -1,9 +1,9 @@
-import OurCoreValues from './section/OurCoreValues';
+import MeetTheTeam from './section/MeetTheTeam';
 
 const About = () => {
     return (
         <div>
-            <OurCoreValues />
+            <MeetTheTeam />
         </div>
     );
 };
