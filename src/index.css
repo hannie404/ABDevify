@@ -625,6 +625,26 @@ video {
   margin-top: auto;
 }
 
+.ml-20{
+  margin-left: 5rem;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -669,6 +689,14 @@ video {
   max-width: 64rem;
 }
 
+.max-w-full{
+  max-width: 100%;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
 .basis-5\/6{
   flex-basis: 83.333333%;
 }
@@ -711,6 +739,10 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -809,14 +841,14 @@ video {
   padding-right: 2rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3{
@@ -834,28 +866,31 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.text-left{
+  text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-justify{
@@ -1235,6 +1270,19 @@ svg {
   .sm\:self-center{
     align-self: center;
   }
+
+  .sm\:text-center{
+    text-align: center;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:leading-\[57px\]{
+    line-height: 57px;
+  }
 }
 
 @media (min-width: 768px){
@@ -1272,6 +1320,14 @@ svg {
 
   .md\:gap-8{
     gap: 2rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
+  }
+
+  .md\:text-center{
+    text-align: center;
   }
 
   .md\:text-start{
@@ -1323,14 +1379,6 @@ svg {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-\[auto_minmax\(0\2c _1fr\)\]{
-    grid-template-rows: auto minmax(0, 1fr);
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1348,14 +1396,22 @@ svg {
     padding-right: 3.5rem;
   }
 
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  .lg\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .lg\:text-left{
+    text-align: left;
+  }
+
+  .lg\:text-center{
+    text-align: center;
   }
 
   .lg\:text-start{
@@ -1400,5 +1456,11 @@ svg {
 
   .lg\:leading-\[84px\]{
     line-height: 84px;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:text-left{
+    text-align: left;
   }
 }

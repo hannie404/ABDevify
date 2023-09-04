@@ -1,5 +1,7 @@
+import { CompanyOverview } from './section';
+
 const About = () => {
-    return <div>About</div>;
+    return <CompanyOverview />;
 };
 
 export default About;
