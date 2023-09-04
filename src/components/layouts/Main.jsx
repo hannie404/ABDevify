@@ -1,5 +1,5 @@
 const Main = ({ children }) => {
-  return <main>{children}</main>
-}
+    return <main className="">{children}</main>;
+};
 
-export default Main
+export default Main;

@@ -1,5 +1,11 @@
-const Career = () => {
-  return <div>Career</div>
-}
+import Careers from './sections/Careers';
 
-export default Career
+const Career = () => {
+    return (
+        <>
+            <Careers />
+        </>
+    );
+};
+
+export default Career;

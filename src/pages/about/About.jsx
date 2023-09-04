@@ -1,5 +1,11 @@
-const About = () => {
-  return <div>About</div>
-}
+import MeetTheTeam from './section/MeetTheTeam';
 
-export default About
+const About = () => {
+    return (
+        <div>
+            <MeetTheTeam />
+        </div>
+    );
+};
+
+export default About;
