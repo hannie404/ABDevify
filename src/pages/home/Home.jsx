@@ -1,5 +1,18 @@
-const Home = () => {
-  return <div>Home</div>
-}
+import { Hero, Testimonials } from './sections';
+import AboutABD from './sections/AboutABD';
+import ChooseUs from './sections/ChooseUs';
+import Training from './sections/Training';
 
-export default Home
+const Home = () => {
+    return (
+        <>
+            <Hero />
+            <AboutABD />
+            <Testimonials />
+            <ChooseUs />
+            <Training />
+        </>
+    );
+};
+
+export default Home;
