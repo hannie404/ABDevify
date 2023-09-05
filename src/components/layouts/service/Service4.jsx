@@ -9,36 +9,29 @@ import nuxt from '/src/assets/images/nuxtjs.png';
 import vue from '/src/assets/images/vue.png';
 import python from '/src/assets/images/python.png';
 import dockers from '/src/assets/images/docker.png';
+import frame from '/src/assets/images/frame.png';
+import frame2 from '/src/assets/images/frame2.png';
 
 function Service4() {
     return (
         <>
             <div className=" max-w-full bg-[#1E1E20]/60 py-16">
                 <div className="container mx-auto w-full text-center">
-                    <h2 className="text-[66px] font-bold text-accent-400">
+                    <h2 className="text-[66px] font-bold leading-[70px] text-accent-400">
                         TECHNOLOGIES <span className="text-white">WE ARE </span>USING
                     </h2>
-                    <p>
+                    <p className="pt-[45px] text-[22px] font-normal leading-8">
                         We always make sure to be on trend when it comes to new technologies. <br />
                         Our employees are open to share and collaborate!
                     </p>
                 </div>
             </div>
-            <div className="w-full  bg-[#1E1E20]/100 ">
-                <div className="bg container mx-auto grid grid-cols-5 items-center gap-[45px] px-8 ">
-                    <img src={sass1} alt="" className="w-full" />
-                    <img src={tailwind} alt="" className="w-full" />
-                    <img src={php} alt="" className="w-full rounded-full" />
-                    <img src={react} alt="" className="w-full" />
-                    <img src={laravel} alt="" className="w-full" />
+            <div className=" w-full bg-[#1E1E20]/100 py-16 ">
+                <div className="container mx-auto flex justify-center px-4 ">
+                    <img src={frame} alt="" />
                 </div>
-                <div className="bg container mx-auto grid grid-cols-6 items-center gap-[45px] ">
-                    <img src={node} alt="" className="w-full" />
-                    <img src={sql} alt="" className="w-full" />
-                    <img src={nuxt} alt="" className="w-full " />
-                    <img src={vue} alt="" className="w-full" />
-                    <img src={dockers} alt="" className="w-full" />
-                    <img src={python} alt="" className="w-full" />
+                <div className="container mx-auto flex justify-center px-4 ">
+                    <img src={frame2} alt="" />
                 </div>
             </div>
         </>
