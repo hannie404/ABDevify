@@ -604,20 +604,8 @@ video {
   top: 50%;
 }
 
-.top-\[60\%\]{
-  top: 60%;
-}
-
 .top-\[70\%\]{
   top: 70%;
-}
-
-.top-\[2\%\]{
-  top: 2%;
-}
-
-.top-\[1\%\]{
-  top: 1%;
 }
 
 .z-10{
@@ -1262,24 +1250,12 @@ svg {
 }
 
 @media (min-width: 1024px){
-  .lg\:top-0{
-    top: 0px;
+  .lg\:top-\[-220px\]{
+    top: -220px;
   }
 
   .lg\:top-\[50\%\]{
     top: 50%;
-  }
-
-  .lg\:top-\[-200px\]{
-    top: -200px;
-  }
-
-  .lg\:top-\[-300px\]{
-    top: -300px;
-  }
-
-  .lg\:top-\[-220px\]{
-    top: -220px;
   }
 
   .lg\:h-10{

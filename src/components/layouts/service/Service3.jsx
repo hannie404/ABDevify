@@ -1,6 +1,6 @@
 function Service3() {
     return (
-        <div className="max-w-full ">
+        <div className="max-w-full py-16">
             <div className="container mx-auto">
                 <h2 className=" text-center font-poppins text-[66px] font-bold uppercase text-accent-400">
                     Development <span className="text-white">Process</span>
