@@ -1,7 +1,16 @@
-import { CompanyOverview } from './section';
+import MeetTheTeam from './section/MeetTheTeam';
+import { CompanyOverview, CoreValues, MissionVision, Team } from './section';
 
 const About = () => {
-    return <CompanyOverview />;
+    return (
+        <div>
+            <CompanyOverview />
+            <MissionVision />
+            <CoreValues />
+            <MeetTheTeam />
+            <Team />
+        </div>
+    );
 };
 
 export default About;
