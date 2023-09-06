@@ -14,9 +14,9 @@ const sliderArray = new Array(6).fill(undefined);
 const Training = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     return (
-        <section className="relative bg-[url('/src/assets/images/training.png')] p-6 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-primary-950/95 before:content-[''] lg:p-16">
+        <section className="relative bg-[url('/src/assets/images/training.png')] px-6 py-16 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:h-full before:w-full before:bg-primary-950/95 before:content-[''] lg:p-16">
             <div className="container mx-auto">
-                <h2 className="relative text-center text-4xl  font-bold leading-normal md:text-5xl lg:text-[66px] lg:leading-[70px]">
+                <h2 className="relative text-center text-4xl font-bold leading-normal md:text-5xl lg:text-[66px] lg:leading-[70px]">
                     <span className="text-secondary-50">Training</span>{' '}
                     <span className="text-accent-500">Experience</span>
                 </h2>

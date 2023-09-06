@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChooseUs = () => {
     return (
-        <section className="container mx-auto space-y-4 px-8 py-16 md:space-y-8 lg:space-y-16">
+        <section className="container mx-auto space-y-4 px-6 py-20 md:space-y-8 lg:space-y-16">
             <h2 className="text-center text-4xl font-bold leading-normal text-secondary-50 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 md:self-end md:text-5xl lg:text-[66px] lg:leading-[70px]">
                 WHY <span className="text-accent-500">YOU SHOULD</span> CHOOSE US
             </h2>

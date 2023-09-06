@@ -16,7 +16,7 @@ const sliderArray = new Array(6).fill(undefined);
 const Testimonials = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
     return (
-        <section className="container relative mx-auto ">
+        <section className="container relative mx-auto py-20">
             <h2 className="relative text-center text-4xl font-bold leading-normal md:text-5xl lg:text-[66px] lg:leading-[70px]">
                 <span className="text-secondary-50">Employee</span>
                 <span className="text-accent-500"> Testimonial</span>

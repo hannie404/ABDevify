@@ -5,41 +5,41 @@ import { benefitDoctorImage, benefitProgrammerImage } from '../../../assets/imag
 
 const Benefits = () => {
     return (
-        <section className="container mx-auto px-8">
-            <div className="grid gap-4 lg:grid-cols-[minmax(0,_1fr),_auto] lg:grid-rows-3 lg:gap-8">
-                <div className="lg:col-start-1 lg:col-end-2">
+        <section className="container mx-auto px-6 py-20">
+            <div className="grid gap-6 md:grid-cols-2 md:grid-rows-[20%,_auto,_minmax(0,_1fr)] md:gap-8 lg:grid-cols-[minmax(0,_1fr),_40%] lg:gap-10">
+                <div className="self-end md:col-start-1 md:col-end-2">
                     <h2 className="text-center text-4xl font-bold leading-[70px] text-secondary-50 md:self-end md:text-start md:text-5xl lg:text-[66px] ">
-                        Employee Benefits
+                        Employees Benefits
                     </h2>
                 </div>
 
-                <div className="flex h-full flex-row gap-4 p-4 lg:col-start-2 lg:col-end-3 lg:row-span-full">
-                    <div className="h-full max-w-[231.816px]">
+                <div className="flex min-h-[35rem] flex-row gap-4 p-4 md:col-start-2 md:col-end-3 md:row-span-full">
+                    <div className="flex-1">
                         <img
-                            className="h-full object-none object-center"
+                            className="h-full w-full rounded-full rounded-bl-none object-cover object-center"
                             src={benefitDoctorImage}
                             alt="benefitDoctorImage"
                         />
                     </div>
 
-                    <div className="h-full max-w-[231.816px]">
+                    <div className="flex-1">
                         <img
-                            className="h-full object-none object-center"
+                            className="h-full w-full rounded-full rounded-tr-none object-cover object-center"
                             src={benefitProgrammerImage}
                             alt="benefitProgrammerImage"
                         />
                     </div>
                 </div>
 
-                <div className="lg:col-start-1 lg:col-end-2">
-                    <ol className="list-inside list-decimal text-3xl">
+                <div className="md:col-start-1 md:col-end-2">
+                    <ol className="list-inside list-decimal space-y-6 md:space-y-8 md:text-xl lg:space-y-10 lg:text-3xl">
                         <li>HMO (Medical & Dental Coverage)</li>
                         <li>Performance-based Salary Increase</li>
                         <li>Flexible Work Setup</li>
                     </ol>
                 </div>
 
-                <div className="lg:col-start-1 lg:col-end-2">
+                <div className="text-center md:col-start-1 md:col-end-2 md:text-start">
                     <Button>View more benefits</Button>
                 </div>
             </div>

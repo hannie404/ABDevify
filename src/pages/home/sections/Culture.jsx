@@ -13,7 +13,7 @@ import { cultureFunAndFriendlyImage } from '../../../assets/images';
 
 const Culture = () => {
     return (
-        <section className="container mx-auto space-y-20 py-16">
+        <section className="container mx-auto space-y-4 py-20 lg:space-y-10">
             <h2 className="text-center text-4xl font-bold leading-normal text-secondary-50 md:text-5xl lg:text-[66px] lg:leading-[70px]">
                 OUR <span className="text-accent-500">CULTURE</span>
             </h2>
