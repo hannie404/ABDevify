@@ -1,0 +1,7 @@
+.swiper-button-prev {
+    @apply left-[25%] top-[100%] h-8 w-8 -translate-y-[100%] rounded-lg lg:rounded-full bg-secondary-50 text-base font-bold after:mt-1 after:text-primary-950 after:content-[url(/src/assets/icons/arrow-left-small.svg)] lg:left-[0%] lg:top-[50%] lg:h-12 lg:w-12 lg:translate-y-0 lg:after:content-[url('/src/assets/icons/arrow-left.svg')];
+}
+
+.swiper-button-next {
+    @apply right-[25%] top-[100%] h-8 w-8 -translate-y-[100%] rounded-lg lg:rounded-full bg-secondary-50 text-base font-bold after:mt-1 after:text-primary-950 after:content-[url('/src/assets/icons/arrow-right-small.svg')] lg:right-[0%] lg:top-[50%] lg:h-12 lg:w-12 lg:translate-y-0 lg:after:content-[url(/src/assets/icons/arrow-right.svg)];
+}

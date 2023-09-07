@@ -32,6 +32,13 @@ svg {
 }
 
 @layer components {
+    .container {
+        @apply w-full max-w-[1280px];
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        @apply h-10 w-10 rounded-full bg-secondary-50 text-base font-bold after:text-primary-950;
+    }
 }
 
 @layer utilities {
