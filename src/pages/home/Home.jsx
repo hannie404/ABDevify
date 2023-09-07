@@ -1,10 +1,15 @@
-import { Hero, Testimonials } from './sections';
+import { AboutABD, Benefits, ChooseUs, Culture, Hero, Testimonials, Training } from './sections';
 
 const Home = () => {
     return (
         <>
             <Hero />
+            <AboutABD />
+            <Culture />
+            <ChooseUs />
             <Testimonials />
+            <Benefits />
+            <Training />
         </>
     );
 };

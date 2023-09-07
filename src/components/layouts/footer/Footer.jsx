@@ -1,5 +1,5 @@
-import NavBrand from '../header/NavBrand';
 import Facebook from './Facebook';
+import FooterLogo from './FooterLogo';
 import Instagram from './Instagram';
 import Linkedin from './Linkedin';
 import Twitter from './Twitter';
@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="bg-[#1E1E20]/60 px-8 py-6">
                 <div className="grid-rows-[auto_repeat(2, minmax(0, 1fr))_auto] sm:grid-rows-[auto_minmax(0, 1fr)] container mx-auto grid grid-cols-[minmax(0,_1fr)_auto] gap-4 sm:grid-cols-3 md:gap-8 lg:gap-16">
                     <div className="col-start-1 col-end-2 justify-self-start sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2">
-                        <NavBrand />
+                        <FooterLogo />
                     </div>
 
                     <div className="col-start-2 col-end-3 row-start-1 row-end-4 flex flex-col gap-8 self-center justify-self-center sm:col-start-2 sm:col-end-4 sm:row-start-1 sm:row-end-2 sm:flex-row">
