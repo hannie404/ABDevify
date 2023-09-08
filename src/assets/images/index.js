@@ -10,3 +10,16 @@ export { default as abdevifyLogoHeaderImage } from './abdevify-logo-header.png';
 export { default as abdevifyLogoFooterImage } from './abdevify-logo-footer.png';
 export { default as squirelImage } from './squirel.png';
 export { default as abdevifyTextImage } from './abdevify-text.png';
+
+// service images
+export { default as docker } from './service/docker.png';
+export { default as laravel } from './service/laravel.png';
+export { default as mysql } from './service/mysql.png';
+export { default as node } from './service/node.png';
+export { default as nuxtjs } from './service/nuxtjs.png';
+export { default as php } from './service/php.png';
+export { default as python } from './service/python.png';
+export { default as react } from './service/react.png';
+export { default as sass } from './service/sass.png';
+export { default as tailwind } from './service/tailwind.png';
+export { default as vue } from './service/vue.png';

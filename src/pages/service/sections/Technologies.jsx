@@ -1,39 +1,80 @@
-import sass1 from '/src/assets/images/sass.png';
-import tailwind from '/src/assets/images/tailwind.png';
-import php from '/src/assets/images/php.png';
-import react from '/src/assets/images/react.png';
-import laravel from '/src/assets/images/laravel.png';
-import node from '/src/assets/images/node.png';
-import sql from '/src/assets/images/mysql.png';
-import nuxt from '/src/assets/images/nuxtjs.png';
-import vue from '/src/assets/images/vue.png';
-import python from '/src/assets/images/python.png';
-import dockers from '/src/assets/images/docker.png';
-import frame from '/src/assets/images/frame.png';
-import frame2 from '/src/assets/images/frame2.png';
+import { Heading } from '../../../components/ui';
+import {
+    docker,
+    laravel,
+    mysql,
+    node,
+    nuxtjs,
+    php,
+    python,
+    react,
+    sass,
+    tailwind,
+    vue,
+} from '../../../assets/images';
 
 function Technologies() {
     return (
         <>
-            <div className=" max-w-full bg-[#1E1E20]/60 py-16">
-                <div className="container mx-auto w-full text-center">
-                    <h2 className="text-[66px] font-bold leading-[70px] text-accent-400">
-                        TECHNOLOGIES <span className="text-white">WE ARE </span>USING
-                    </h2>
-                    <p className="pt-[45px] text-[22px] font-normal leading-8">
-                        We always make sure to be on trend when it comes to new technologies. <br />
-                        Our employees are open to share and collaborate!
-                    </p>
+            <section className="container mx-auto space-y-4 px-6 py-20 lg:space-y-16">
+                <Heading className="text-center" tag="h2">
+                    <span className="text-accent-500">TECHNOLOGIES</span> WE ARE{' '}
+                    <span className="text-accent-500">USING</span>
+                </Heading>
+
+                <p className="text-center text-xs leading-5 text-secondary-50/70 lg:text-2xl lg:leading-8">
+                    We always make sure to be on trend when it comes to new technologies. Our
+                    employees are open to share and collaborate!
+                </p>
+
+                <div className="flex flex-wrap items-start justify-center gap-10">
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={docker} alt="docker" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={laravel} alt="laravel" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={mysql} alt="mysql" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={node} alt="node" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={nuxtjs} alt="nuxtjs" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={php} alt="php" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={python} alt="python" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={react} alt="react" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={sass} alt="sass" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={tailwind} alt="tailwind" />
+                    </div>
+
+                    <div className="flex items-center lg:h-20">
+                        <img className="h-10 lg:h-20" src={vue} alt="vue" />
+                    </div>
                 </div>
-            </div>
-            <div className=" w-full bg-[#1E1E20]/100 py-16 ">
-                <div className="container mx-auto flex justify-center px-4 ">
-                    <img src={frame} alt="" />
-                </div>
-                <div className="container mx-auto flex justify-center px-4 ">
-                    <img src={frame2} alt="" />
-                </div>
-            </div>
+            </section>
+
+            <div className=" w-full bg-[#1E1E20]/100 py-16 "></div>
         </>
     );
 }
