@@ -1,14 +1,19 @@
-import Service3 from '../../components/layouts/service/Service3';
-import Service4 from '../../components/layouts/service/Service4';
-import Service5 from '../../components/layouts/service/Service5';
+import ServiceSection1 from '../service/sections/ServiceSection1'
+import ServiceSection2 from '../service/sections/ServiceSection2'
 
 const Service = () => {
     return (
         <div>
-            Service
-            <Service3 />
-            <Service4 />
-            <Service5 />
+
+        <section className='container mx-auto py-10 px-7'>
+           <ServiceSection1></ServiceSection1>
+        </section>
+
+        <section className="container mx-auto py-8">
+            
+        <ServiceSection2/>
+        </section>
+        
         </div>
     );
 };
