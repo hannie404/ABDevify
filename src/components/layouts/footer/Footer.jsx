@@ -7,8 +7,8 @@ import Twitter from './Twitter';
 const Footer = () => {
     return (
         <footer className="mt-auto">
-            <div className="bg-[#1E1E20]/60 px-8 py-6">
-                <div className="grid-rows-[auto_repeat(2, minmax(0, 1fr))_auto] sm:grid-rows-[auto_minmax(0, 1fr)] container mx-auto grid grid-cols-[minmax(0,_1fr)_auto] gap-4 sm:grid-cols-3 md:gap-8 lg:gap-16">
+            <div className="bg-[#1E1E20]/60 py-8">
+                <div className="grid-rows-[auto_repeat(2, minmax(0, 1fr))_auto] sm:grid-rows-[auto_minmax(0, 1fr)] container mx-auto grid grid-cols-[minmax(0,_1fr)_auto] gap-4 px-4 sm:grid-cols-3 md:gap-8 lg:gap-16">
                     <div className="col-start-1 col-end-2 justify-self-start sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2">
                         <FooterLogo />
                     </div>
