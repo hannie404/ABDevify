@@ -1,4 +1,3 @@
-export { default as careersImage } from './careers.png';
 export { default as heroImage } from './hero-3.png';
 export { default as aboutAbdImage } from './aboutAbdImage.png';
 export { default as trainingImage } from './training.png';
@@ -23,3 +22,9 @@ export { default as react } from './service/react.png';
 export { default as sass } from './service/sass.png';
 export { default as tailwind } from './service/tailwind.png';
 export { default as vue } from './service/vue.png';
+
+// service images
+export { default as careers } from './career/careers.png';
+export { default as workonsite } from './career/workonsite.png';
+export { default as hybrid } from './career/hybrid.png';
+export { default as workfromhome } from './career/workfromhome.png';

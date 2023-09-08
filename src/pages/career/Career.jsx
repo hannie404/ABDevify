@@ -1,9 +1,11 @@
-import Careers from './sections/Careers';
+import { Careers, JobOpening, WorkArrangement } from './sections';
 
 const Career = () => {
     return (
         <>
             <Careers />
+            <JobOpening />
+            <WorkArrangement />
         </>
     );
 };
