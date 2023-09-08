@@ -12,7 +12,7 @@ import dockers from '/src/assets/images/docker.png';
 import frame from '/src/assets/images/frame.png';
 import frame2 from '/src/assets/images/frame2.png';
 
-function Service4() {
+function Technologies() {
     return (
         <>
             <div className=" max-w-full bg-[#1E1E20]/60 py-16">
@@ -38,4 +38,4 @@ function Service4() {
     );
 }
 
-export default Service4;
+export default Technologies;

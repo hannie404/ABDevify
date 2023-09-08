@@ -1,4 +1,4 @@
-function Service3() {
+function DevProcess() {
     return (
         <div className="max-w-full py-16">
             <div className="container mx-auto">
@@ -49,4 +49,4 @@ function Service3() {
     );
 }
 
-export default Service3;
+export default DevProcess;
