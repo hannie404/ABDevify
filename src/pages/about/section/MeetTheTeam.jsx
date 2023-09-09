@@ -1,27 +1,31 @@
 import React from 'react';
-import Annie from './Assets/Img/Annie.jpg';
+import { annie } from '../../../assets/images';
+import { Heading } from '../../../components/ui';
+
 function MeetTheTeam() {
     return (
-        <section className="container mx-auto py-16">
-            <div className=" text-center text-[34px] font-bold lg:text-[60px]">
-                <h1 className="text-secondary-50">
-                    Meet the <span className="text-accent-500">Team</span>
-                </h1>
+        <section className="container mx-auto space-y-8 px-6 py-16 lg:space-y-16">
+            <div className="">
+                <Heading className="text-center" tag="h2">
+                    Meet The <span className="text-accent-500">Team</span>
+                </Heading>
             </div>
-            <div className="grid grid-rows-6 gap-x-10 gap-y-7 px-10 py-10 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-7 lg:gap-y-7 lg:px-60">
+
+            <div className="grid lg:grid-cols-3 gap-6">
                 {new Array(6).fill(undefined).map((el, i) => (
-                    <div className=" h-50 basis-3/12 place-items-center rounded-md border border-secondary-50/20 p-10 ">
-                        <article className=" h-[320px] space-y-2 lg:h-[300px]">
-                            <figure className="flex items-center justify-center ">
-                                <img src={Annie} alt="Annie" className="h-[190px] rounded-full " />
-                            </figure>
-                            <div className=" flex items-center justify-center">
-                                <div className="mr-3 text-2xl text-white">Annie</div>
-                                <div className="text-2xl text-accent-500">Nesh..</div>
-                            </div>
-                            <p className="flex items-center justify-center">Sr.Software Engineer</p>
-                        </article>
-                    </div>
+                    <article className="aspect-[3/3.5] rounded-2xl border-2  border-secondary-50/10">
+                        <div className="p-8">
+                            <img className="mx-auto" src={annie} alt="Annie" />
+                        </div>
+
+                        <div className="flex flex-col items-center justify-center lg:space-y-4">
+                            <span className="line-clamp-1 truncate text-2xl font-semibold leading-normal text-secondary-50 lg:text-start lg:text-3xl lg:leading-normal">
+                                Annie Neshreen
+                            </span>
+
+                            <span className="block text-xl font-medium">Sr.Software Engineer</span>
+                        </div>
+                    </article>
                 ))}
             </div>
         </section>

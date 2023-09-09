@@ -1,27 +1,34 @@
 import React from 'react';
+import { Heading } from '../../../components/ui';
+import { yellowCircle } from '../../../assets/icons';
+
+const cardArray = new Array(5).fill(undefined);
 
 const CoreValues = () => {
+    console.log(yellowCircle);
     return (
-        <section className="container mx-auto max-w-full bg-[#1E1E20]/60 px-4 py-14 lg:px-44 lg:pt-32 lg:text-left">
-            <h1 className="px-20 text-center text-[34px] font-bold  text-accent-500 lg:text-[80px]">
-                OUR <span className="text-secondary-50">CORE</span> VALUES
-            </h1>
-            <div className="py-14 pl-8 leading-6 lg:py-28">
-                <ul className="grid list-inside list-disc gap-y-10 px-5 md:list-inside md:px-20 lg:grid-cols-2 lg:gap-x-60 lg:gap-y-20">
-                    <div>
-                        <li className="text-[18px] text-accent-500 lg:text-[32px]">
-                            <span className="font-bold text-secondary-50">
-                                We strive for excellence
-                            </span>
-                        </li>
-                        <p className="txt-[10px] pl-6 pt-3 lg:text-[18px]">
-                            {' '}
-                            We give the best quality and efficiency in all aspects of the business
-                            to reach or exceed the targets and expectations.
-                        </p>
-                    </div>
+        <section className="container mx-auto space-y-8 px-6 py-20 lg:space-y-16 lg:px-0">
+            <Heading className="text-center" tag="h2">
+                OUR <span className="text-accent-500">CORE</span> VALUES
+            </Heading>
 
-                    <div>
+            <div className="">
+                <ul className="grid list-inside list-image-[url('/src/assets/icons/about/yellow-circle.svg')] gap-y-10 marker:text-accent-500 lg:grid-cols-2 lg:justify-items-center lg:gap-y-14">
+                    {cardArray.map((el, i) => (
+                        <li className="max-w-md">
+                            <article className="ml-2 inline space-y-2 text-2xl">
+                                <Heading className=" inline" tag="h3">
+                                    We strive for excellence
+                                </Heading>
+                                <p className="ml-8 text-sm leading-5 lg:text-lg lg:leading-7">
+                                    We give the best quality and efficiency in all aspects of the
+                                    business to reach or exceed the targets and expectations.
+                                </p>
+                            </article>
+                        </li>
+                    ))}
+
+                    {/* <div>
                         <li className="text-[18px] text-accent-500 lg:text-[32px]">
                             <span className="font-bold text-secondary-50">We are committed</span>
                         </li>
@@ -63,7 +70,7 @@ const CoreValues = () => {
                             changes in the technology, hence, bringing fresh concepts and new
                             solutions that will add tremendous value to the business.
                         </p>
-                    </div>
+                    </div> */}
                 </ul>
             </div>
         </section>

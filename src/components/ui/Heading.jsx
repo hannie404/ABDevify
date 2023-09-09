@@ -2,7 +2,7 @@ const Heading = ({ children, className, tag = 'h1', ...props }) => {
     const Element = tag;
 
     let defaultClassName =
-        'text-5xl font-bold leading-normal text-secondary-50 lg:text-[66px] lg:leading-[70px]';
+        'text-5xl font-bold leading-normal text-secondary-50 lg:text-[80px] lg:leading-[84px]';
     switch (Element) {
         case 'h2':
             defaultClassName =

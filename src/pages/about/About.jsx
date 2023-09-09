@@ -1,5 +1,4 @@
-import MeetTheTeam from './section/MeetTheTeam';
-import { CompanyOverview, CoreValues, MissionVision, Team } from './section';
+import { CompanyOverview, CoreValues, MissionVision, MeetTheTeam } from './section';
 
 const About = () => {
     return (
@@ -8,7 +7,6 @@ const About = () => {
             <MissionVision />
             <CoreValues />
             <MeetTheTeam />
-            <Team />
         </div>
     );
 };

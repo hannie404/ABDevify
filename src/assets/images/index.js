@@ -28,3 +28,9 @@ export { default as careers } from './career/careers.png';
 export { default as workonsite } from './career/workonsite.png';
 export { default as hybrid } from './career/hybrid.png';
 export { default as workfromhome } from './career/workfromhome.png';
+
+// about images
+export { default as annie } from './about/annie.png';
+export { default as mission } from './about/mission.png';
+export { default as vision } from './about/vision.png';
+export { default as missionvision } from './about/missionvision.png';
