@@ -1,4 +1,5 @@
 import { heroImage } from '../../../assets/images';
+import Heading from '../../../components/ui/Heading';
 
 const Hero = () => {
     return (
@@ -6,11 +7,11 @@ const Hero = () => {
             <div className="container mx-auto my-auto">
                 <div className="grid gap-4 md:grid-cols-2 md:grid-rows-[auto_minmax(0,_1fr)] md:gap-6 lg:gap-8">
                     <div className="flex flex-col gap-4 text-center md:row-start-1 md:row-end-2 md:text-start">
-                        <h1 className="whitespace-nowrap text-[34px] font-bold leading-9 md:text-6xl lg:text-[80px] lg:leading-[84px]">
+                        <Heading>
                             <span className="text-secondary-50">Code the Next</span>
                             <br />
                             <span className="text-accent-500">Breakthrough!</span>
-                        </h1>
+                        </Heading>
 
                         <p className="text-base leading-6 md:text-3xl lg:text-4xl lg:leading-[57px]">
                             Join Our Developer <br /> Dream Team....!

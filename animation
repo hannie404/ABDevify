@@ -1,0 +1,23 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const AnimatedComponent = () => {
+    const [ref, inView] = useInView({
+        triggerOnce: true, // Trigger animation once
+        rootMargin: '-100px 0px', // Adjust this value as needed
+    });
+
+    return (
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: inView ? 1 : 0 }}
+            transition={{ duration: 1 }}
+        >
+            Content that will fade in when in view.
+        </motion.div>
+    );
+};
+
+export default AnimatedComponent;

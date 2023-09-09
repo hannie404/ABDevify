@@ -1,5 +1,11 @@
+import { ContactForm } from './sections';
+
 const Contact = () => {
-    return <div>Contact</div>;
+    return (
+        <>
+            <ContactForm />
+        </>
+    );
 };
 
 export default Contact;
