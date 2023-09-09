@@ -1,0 +1,30 @@
+/* Base background color */
+.Toastify__toast {
+    @apply bg-accent-500;
+}
+
+/* For different toast types, you might want variations */
+.Toastify__toast--info {
+    background-color: #ffdd57; /* Slightly darker yellow for info */
+}
+
+.Toastify__toast--success {
+    @apply bg-primary-900;
+}
+
+.Toastify__toast--success .Toastify__svg--success path {
+    fill: #ffdd57; /* replace #yourDesiredColor with the actual color you want */
+}
+
+.Toastify__toast--warning {
+    background-color: #ffbb33; /* More towards orange for warnings */
+}
+
+.Toastify__toast--error {
+    background-color: #ff8800; /* Orange-ish color for errors */
+}
+
+/* Progress bar customization */
+.Toastify__progress-bar {
+    background-color: #ffaa00; /* A darker shade of yellow for contrast */
+}
