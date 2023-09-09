@@ -55,7 +55,6 @@ const ContactForm = () => {
                         {...register('fullname')}
                         aria-label="fullname"
                         placeholder="Enter your full name"
-                        value="Prince Cipriano"
                     />
                     {errors.fullname && (
                         <span className="absolute bottom-0 left-0 translate-x-2  translate-y-[120%] text-sm text-rose-500">
@@ -86,7 +85,6 @@ const ContactForm = () => {
                         {...register('email')}
                         aria-label=""
                         placeholder="Enter your email address"
-                        value="prince@email.com"
                     />
                     {errors.email && (
                         <span className="absolute bottom-0 left-0 translate-x-2  translate-y-[120%] text-sm text-rose-500">
@@ -102,7 +100,6 @@ const ContactForm = () => {
                         {...register('message')}
                         aria-label=""
                         placeholder="Write your message"
-                        value="sup bitch"
                     ></textarea>
                     {errors.message && (
                         <span className="absolute bottom-0 left-0 translate-x-2  translate-y-[120%] text-sm text-rose-500">

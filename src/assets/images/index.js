@@ -1,14 +1,17 @@
-export { default as heroImage } from './hero-3.png';
-export { default as aboutAbdImage } from './aboutAbdImage.png';
-export { default as trainingImage } from './training.png';
-export { default as cultureFunAndFriendlyImage } from './culture-fun-and-friendly-environment.png';
-export { default as benefitDoctorImage } from './benefit-doctor.jpg';
-export { default as benefitProgrammerImage } from './benefit-programmer.png';
-export { default as testimonialImage } from './testimonial.png';
-export { default as abdevifyLogoHeaderImage } from './abdevify-logo-header.png';
-export { default as abdevifyLogoFooterImage } from './abdevify-logo-footer.png';
-export { default as squirelImage } from './squirel.png';
-export { default as abdevifyTextImage } from './abdevify-text.png';
+// footer and header images
+export { default as abdevifyLogoHeaderImage } from './header/abdevify-logo-header.png';
+export { default as squirelImage } from './header/squirel.png';
+export { default as abdevifyTextImage } from './header/abdevify-text.png';
+export { default as abdevifyLogoFooterImage } from './footer/abdevify-logo-footer.png';
+
+// home images
+export { default as heroImage } from './home/hero.png';
+export { default as aboutAbdImage } from './home/aboutAbdImage.png';
+export { default as trainingImage } from './home/training.png';
+export { default as cultureFunAndFriendlyImage } from './home/culture-fun-and-friendly-environment.png';
+export { default as benefitDoctorImage } from './home/benefit-doctor.jpg';
+export { default as benefitProgrammerImage } from './home/benefit-programmer.png';
+export { default as testimonialImage } from './home/testimonial.png';
 
 // service images
 export { default as docker } from './service/docker.png';
@@ -22,6 +25,7 @@ export { default as react } from './service/react.png';
 export { default as sass } from './service/sass.png';
 export { default as tailwind } from './service/tailwind.png';
 export { default as vue } from './service/vue.png';
+export { default as ourService } from './service/our-service.png';
 
 // service images
 export { default as careers } from './career/careers.png';

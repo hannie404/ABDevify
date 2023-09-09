@@ -1,4 +1,4 @@
-import servicesImage2 from '../../../assets/images/rightsideservicespage.png';
+import { ourService } from '../../../assets/images';
 import { Heading } from '../../../components/ui';
 
 const OurServices = () => {
@@ -16,7 +16,7 @@ const OurServices = () => {
                 </div>
 
                 <div className="justify-center md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3">
-                    <img className="mx-auto" src={servicesImage2} alt="" />
+                    <img className="mx-auto" src={ourService} alt="" />
                 </div>
 
                 <div className="px-8">

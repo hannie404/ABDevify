@@ -1,8 +1,9 @@
 import { AboutABD, Benefits, ChooseUs, Culture, Hero, Testimonials, Training } from './sections';
+import Main from '../../components/layouts/Main';
 
 const Home = () => {
     return (
-        <>
+        <Main>
             <Hero />
             <AboutABD />
             <Culture />
@@ -10,7 +11,7 @@ const Home = () => {
             <Testimonials />
             <Benefits />
             <Training />
-        </>
+        </Main>
     );
 };
 
