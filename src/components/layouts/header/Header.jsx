@@ -3,7 +3,7 @@ import MenuBar from './MenuBar';
 import NavBar from './NavBar';
 import NavBrand from './NavBrand';
 
-const Header = () => {
+const Header = ({ setShow }) => {
     return (
         <header className="sticky top-0 z-10 w-full bg-primary-950 px-8 py-6">
             <div className="container mx-auto">
@@ -11,7 +11,7 @@ const Header = () => {
                     <NavBrand />
                     <NavBar />
                     <InquiryButton />
-                    <MenuBar />
+                    <MenuBar setShow={setShow} />
                 </nav>
             </div>
         </header>

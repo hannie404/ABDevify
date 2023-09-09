@@ -4,7 +4,7 @@ import { Heading } from '../../../components/ui';
 
 const MissionVision = () => {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 py-20 lg:py-32">
             <div className="grid gap-y-8 lg:grid-cols-2 lg:grid-rows-2">
                 <section className="space-y-4 text-center lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:text-start lg:text-2xl lg:leading-9">
                     <Heading tag="h2">MISSION</Heading>

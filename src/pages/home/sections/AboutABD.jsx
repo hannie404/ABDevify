@@ -5,13 +5,8 @@ const AboutABD = () => {
     return (
         <section className="container mx-auto px-6 py-20">
             <div className="grid grid-rows-[repeat(3,_auto)] md:grid-cols-2 md:grid-rows-[20%_minmax(0,_1fr)] md:gap-4">
-                {/* <h2 className="text-center text-4xl font-bold leading-[70px] md:text-start md:text-5xl lg:text-[66px]">
-                    <span className="text-accent-500">ABOUT</span>{' '}
-                    <span className="text-secondary-50">ABD</span>
-                </h2> */}
-
                 <div className="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2 md:self-end">
-                    <Heading tag="h2">
+                    <Heading className="text-center lg:text-start" tag="h2">
                         <span className="text-accent-500">ABOUT</span> <span>ABD</span>
                     </Heading>
                 </div>

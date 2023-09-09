@@ -7,8 +7,8 @@ const MoreServices = () => {
     console.log(brush);
     return (
         <section className="container mx-auto space-y-20 px-6 py-20">
-            <div className="text-center">
-                <Heading tag="h2">
+            <div>
+                <Heading className="text-center" tag="h2">
                     More <span className="text-accent-500">services</span>
                     <br />
                     <span className="text-accent-500">we</span> offer

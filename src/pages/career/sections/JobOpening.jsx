@@ -6,7 +6,7 @@ const cardArray = new Array(4).fill(undefined);
 
 const JobOpening = () => {
     return (
-        <section className="container mx-auto space-y-8 px-6 py-20">
+        <section className="container mx-auto space-y-8 px-6 py-32">
             <div>
                 <Heading className="text-center" tag="h2">
                     JOB <span className="text-accent-500">OPENING</span>

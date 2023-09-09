@@ -3,7 +3,7 @@ import { Heading } from '../../../components/ui';
 
 const OurServices = () => {
     return (
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-6 pb-20 pt-10">
             <div className="grid gap-y-6 md:grid-rows-[auto,_minmax(0,_1fr)] lg:grid-cols-[40%,_60%] lg:grid-rows-[auto,_minmax(0,_1fr)] lg:gap-y-8">
                 <div className="space-y-4 text-center md:space-y-6 md:text-start">
                     <p className="text-2xl font-bold lg:text-4xl">Our Services</p>

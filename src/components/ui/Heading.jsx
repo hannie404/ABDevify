@@ -20,8 +20,6 @@ const Heading = ({ children, className, tag = 'h1', ...props }) => {
             defaultClassName;
             break;
         default:
-            defaultClassName;
-            break;
     }
 
     return (
