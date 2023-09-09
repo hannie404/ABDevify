@@ -1,6 +1,6 @@
 const Twitter = () => {
     return (
-        <>
+        <a href="https://web.facebook.com/" target="_blank">
             <svg
                 className="h-8 w-8 md:h-9 md:w-9 lg:h-10 lg:w-10"
                 viewBox="0 0 28 28"
@@ -12,7 +12,7 @@ const Twitter = () => {
                     fill="#FFCA00"
                 />
             </svg>
-        </>
+        </a>
     );
 };
 

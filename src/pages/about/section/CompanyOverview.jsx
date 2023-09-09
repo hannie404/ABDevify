@@ -4,13 +4,13 @@ import { Heading } from '../../../components/ui';
 const CompanyOverview = () => {
     return (
         <section>
-            <div className="container mx-auto px-6 pb-12 pt-6 lg:px-0">
+            <div className="container mx-auto px-6 pb-12 pt-6">
                 <Heading className="text-center" tag="h1">
                     About Us
                 </Heading>
             </div>
 
-            <div className=" bg-primary-900">
+            <div className=" bg-[#1E1E20]/70">
                 <section className="container mx-auto space-y-8 px-6 py-8 lg:space-y-12 lg:py-12">
                     <Heading className="text-center lg:text-start" tag="h2">
                         <span className="text-accent-500">COMPANY</span> OVERVIEW

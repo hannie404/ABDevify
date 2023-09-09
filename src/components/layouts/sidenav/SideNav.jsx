@@ -1,8 +1,7 @@
-import { createPortal } from 'react-dom';
 import { NavLink } from 'react-router-dom';
 const SideNav = ({ show, setShow }) => {
     const handleIsActive = ({ isActive }) => (isActive ? 'text-accent-500' : '');
-    return createPortal(
+    return (
         <div
             className={`bottom-0 left-0 right-0 top-0 z-10 bg-primary-950 ${
                 show ? 'fixed' : 'hidden'
@@ -10,7 +9,7 @@ const SideNav = ({ show, setShow }) => {
             show={show}
         >
             <nav>
-                <ul className="flex min-h-screen flex-col items-center justify-start gap-y-6 p-20 text-3xl font-semibold">
+                <ul className="flex min-h-screen flex-col items-center justify-start gap-y-6 py-20 text-3xl font-semibold">
                     <NavLink
                         to="/"
                         className={handleIsActive}
@@ -65,8 +64,7 @@ const SideNav = ({ show, setShow }) => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-        </div>,
-        document.getElementById('sidenav')
+        </div>
     );
 };
 

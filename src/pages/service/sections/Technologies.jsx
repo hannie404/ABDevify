@@ -64,9 +64,9 @@ function Technologies() {
                         <img className="h-10 lg:h-20" src={sass} alt="sass" />
                     </div>
 
-                    <div className="flex items-center lg:h-20">
+                    {/* <div className="flex items-center lg:h-20">
                         <img className="h-10 lg:h-20" src={tailwind} alt="tailwind" />
-                    </div>
+                    </div> */}
 
                     <div className="flex items-center lg:h-20">
                         <img className="h-10 lg:h-20" src={vue} alt="vue" />

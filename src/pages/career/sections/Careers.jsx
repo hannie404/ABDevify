@@ -4,7 +4,7 @@ import { Heading } from '../../../components/ui';
 const Careers = () => {
     return (
         <>
-            <section className="container mx-auto px-6 pb-20 pt-10">
+            <section className="container mx-auto px-6 pb-20 pt-4 lg:pt-10">
                 <div className="grid space-y-6 lg:grid-cols-2 lg:grid-rows-[20%,_minmax(0,_1fr)] lg:gap-y-8 lg:space-y-0">
                     <div className="lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:self-end">
                         <Heading className="text-center lg:text-start" tag="h2">
