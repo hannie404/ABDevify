@@ -1278,18 +1278,6 @@ svg {
     top: -220px;
   }
 
-  .lg\:top-\[70\%\]{
-    top: 70%;
-  }
-
-  .lg\:top-\[60\%\]{
-    top: 60%;
-  }
-
-  .lg\:top-\[55\%\]{
-    top: 55%;
-  }
-
   .lg\:top-\[50\%\]{
     top: 50%;
   }
@@ -1298,20 +1286,12 @@ svg {
     height: 2.5rem;
   }
 
-  .lg\:h-\[650px\]{
-    height: 650px;
-  }
-
   .lg\:w-10{
     width: 2.5rem;
   }
 
   .lg\:w-\[400px\]{
     width: 400px;
-  }
-
-  .lg\:w-\[650px\]{
-    width: 650px;
   }
 
   .lg\:grid-cols-2{
