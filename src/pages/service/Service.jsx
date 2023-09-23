@@ -1,15 +1,24 @@
-import Service3 from '../../components/layouts/service/Service3';
-import Service4 from '../../components/layouts/service/Service4';
-import Service5 from '../../components/layouts/service/Service5';
+import { DevProcess, MoreServices, OurServices, Technologies } from './sections';
+import Main from '../../components/layouts/Main';
 
 const Service = () => {
     return (
-        <div>
-            Service
-            <Service3 />
-            <Service4 />
-            <Service5 />
-        </div>
+        <Main>
+            <div className="yellowBlushRight">
+                <div className="blueBlushLeftBig">
+                    <div className="radialLeft">
+                        <OurServices />
+                    </div>
+                <MoreServices />
+                </div>
+            </div>
+            <div className="yellowBlushLeft">
+                <div className="blueBlushRight">
+                <DevProcess />
+                <Technologies />
+                </div>
+            </div>
+        </Main>
     );
 };
 

@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    mode: 'jit',
     content: [
+        'index.html',
         './src/**/**/**/**/**/*.jsx',
         './src/**/**/**/**/*.jsx',
         './src/**/**/**/*.jsx',
         './src/**/**/*.jsx',
         './src/**/*.jsx',
-        './index.html',
     ],
     theme: {
         extend: {
@@ -56,6 +57,19 @@ export default {
                     900: '#74430f',
                     950: '#442204',
                 },
+            },
+            keyframes: {
+                spin: {
+                    from: {
+                        transform: 'rotate(0deg)',
+                    },
+                    to: {
+                        transform: 'rotate(360deg)',
+                    },
+                },
+            },
+            animation: {
+                spin: 'spin 1s linear infinite',
             },
         },
         keyframes: {},

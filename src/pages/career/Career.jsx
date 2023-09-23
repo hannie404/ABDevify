@@ -1,10 +1,25 @@
-import Careers from './sections/Careers';
+import { Benefits } from '../home/sections';
+import { Careers, JobOpening, WorkArrangement } from './sections';
+import Main from '../../components/layouts/Main';
 
 const Career = () => {
     return (
-        <>
-            <Careers />
-        </>
+        <Main>
+            <div className="yellowBlushLeft">
+                <div className="blueBlushRightSmall">
+                    <div className="">
+                        <Careers />
+                    </div>
+                    <JobOpening />
+                </div>
+            </div>
+            <div className="yellowBlushRight">
+                <div className="radialLeft">
+                    <Benefits />
+                </div>
+                    <WorkArrangement />
+            </div>
+        </Main>
     );
 };
 

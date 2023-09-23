@@ -1,11 +1,5 @@
-import avatar1 from '/src/assets/images/avatar1.png';
-import avatar2 from '/src/assets/images/avatar2.png';
-import avatar3 from '/src/assets/images/avatar3.png';
-import avatar4 from '/src/assets/images/avatar4.png';
-import avatar5 from '/src/assets/images/avatar5.png';
-import avatar6 from '/src/assets/images/avatar6.png';
-import circle from '/src/assets/images/circle.png';
-import circle2 from '/src/assets/images/circle2.png';
+import { annie } from '../../../assets/images'
+import { circleIcon } from '../../../assets/icons';
 
 const BePart = () => {
   return (
@@ -14,40 +8,40 @@ const BePart = () => {
                 <div className="col-span-1 flex justify-center ">
                     <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
                         <img
-                            src={avatar1}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                         <img
-                            src={avatar2}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                         <img
-                            src={avatar3}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                         <img
-                            src={avatar4}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                         <img
-                            src={avatar5}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                         <img
-                            src={avatar6}
+                            src={annie}
                             alt=""
-                            className="h-[185px] w-[185px] rounded-[136.50px] border border-stone-500 backdrop-blur-[14px]"
+                            className="h-[185px] w-[185px] rounded-full border border-stone-500 backdrop-blur-[14px]"
                         />
                     </div>
                 </div>
-                <div className="absolute left-0 top-0 w-[300px] lg:top-[-220px] lg:w-[400px]">
-                    <img src={circle2} alt="" className="w-full" />
-                </div>
+                {/* <div className="absolute left-0 top-0 w-[300px] lg:top-[-220px] lg:w-[400px]">
+                    <img src={circleIcon} alt="" className="w-full" />
+                </div> */}
 
                 <div className="col-span-1 font-bold ">
                     <div className="flex justify-center lg:justify-start">
@@ -61,7 +55,7 @@ const BePart = () => {
                             </h2>
                         </div>
                         <div className="absolute right-0 top-[70%] w-[300px] lg:top-[50%] lg:w-[400px]">
-                            <img src={circle} alt="" />
+                            <img src={circleIcon} alt="" />
                         </div>
                     </div>
 
