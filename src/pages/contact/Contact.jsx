@@ -5,7 +5,11 @@ import { ContactForm } from './sections';
 const Contact = () => {
     return (
         <Main>
-            <ContactForm />
+            <div className="yellowBlushLeft">
+                <div className="radialRight">
+                    <ContactForm />
+                </div>
+            </div>
         </Main>
     );
 };
