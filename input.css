@@ -39,7 +39,80 @@ svg {
     .swiper-button-next {
         @apply h-10 w-10 rounded-full bg-secondary-50 text-base font-bold after:text-primary-950;
     }
+
+    /* Backgrounds */
+    .yellowBlushRight {
+        background-image: url(./assets/icons/global/fullBlushYellow.svg);
+        background-position: right 180% center;
+        background-repeat: no-repeat;
+        background-size: 120%;
+    }
+    
+    .yellowBlushLeft {
+        background-image: url(./assets/icons/global/blushYellowLeft.svg);
+        background-position: left 200% center;
+        background-repeat: no-repeat;
+        background-size: 120%;
+    }
+    
+    .radialLeft{
+        background-image: url(./assets/icons/global/radialFull.svg);
+        background-repeat: no-repeat;
+        background-position: left -20% center;
+        background-size: contain;
+    }
+    
+    .radialLeftSmall{
+        background-image: url(./assets/icons/global/radialFull.svg);
+        background-repeat: no-repeat;
+        background-position: left -20% center;
+        background-size: 40%;
+    }
+    
+    .radialRight{
+        background-image: url(./assets/icons/global/radialFull.svg);
+        background-repeat: no-repeat;
+        background-position: right -20% center;
+        background-size: contain;
+    }
+    
+    .blueBlushRight {
+        background-image: url(./assets/icons/global/blushBlueFull.svg);
+        background-repeat: no-repeat;
+        background-position: right -180% center;
+        background-size: contain;
+    }
+    
+    .blueBlushRightSmall {
+        background-image: url(./assets/icons/global/blushBlueFull.svg);
+        background-repeat: no-repeat;
+        background-position: right -50% center;
+        background-size: contain;
+    }
+    
+    .blueBlushLeft {
+        background-image: url(./assets/icons/global/blushBlueFull.svg);
+        background-repeat: no-repeat;
+        background-position: left -200% center;
+        background-size: contain;
+    }
+    
+    .blueBlushLeftBig {
+        background-image: url(./assets/icons/global/blushBlueFull.svg);
+        background-repeat: no-repeat;
+        background-position: left -300% center;
+        background-size: contain;
+    }
+    
+    .blueBlushLinearLeft {
+        background-image: url(./assets/icons/global/blushLinearBlue.svg);
+        background-repeat: no-repeat;
+        background-position: left -20% center;
+        background-size: contain;
+    }
 }
 
 @layer utilities {
 }
+
+

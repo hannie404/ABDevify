@@ -78,78 +78,6 @@ body {
 3. Ensure horizontal rules are visible by default.
 */
 
-/* Backgrounds */
-.yellowBlushRight {
-  background-image: url(./assets/icons/global/fullBlushYellow.svg);
-  background-position: right 180% center;
-  background-repeat: no-repeat;
-  background-size: 120%;
-}
-
-.yellowBlushLeft {
-  background-image: url(./assets/icons/global/blushYellowLeft.svg);
-  background-position: left 200% center;
-  background-repeat: no-repeat;
-  background-size: 120%;
-}
-
-.radialLeft{
-  background-image: url(./assets/icons/global/radialFull.svg);
-  background-repeat: no-repeat;
-  background-position: left -20% center;
-  background-size: contain;
-}
-
-.radialLeftSmall{
-  background-image: url(./assets/icons/global/radialFull.svg);
-  background-repeat: no-repeat;
-  background-position: left -20% center;
-  background-size: 40%;
-}
-
-.radialRight{
-  background-image: url(./assets/icons/global/radialFull.svg);
-  background-repeat: no-repeat;
-  background-position: right -20% center;
-  background-size: contain;
-}
-
-.blueBlushRight {
-  background-image: url(./assets/icons/global/blushBlueFull.svg);
-  background-repeat: no-repeat;
-  background-position: right -180% center;
-  background-size: contain;
-}
-
-.blueBlushRightSmall {
-  background-image: url(./assets/icons/global/blushBlueFull.svg);
-  background-repeat: no-repeat;
-  background-position: right -50% center;
-  background-size: contain;
-}
-
-.blueBlushLeft {
-  background-image: url(./assets/icons/global/blushBlueFull.svg);
-  background-repeat: no-repeat;
-  background-position: left -200% center;
-  background-size: contain;
-}
-
-.blueBlushLeftBig {
-  background-image: url(./assets/icons/global/blushBlueFull.svg);
-  background-repeat: no-repeat;
-  background-position: left -300% center;
-  background-size: contain;
-}
-
-.blueBlushLinearLeft {
-  background-image: url(./assets/icons/global/blushLinearBlue.svg);
-  background-repeat: no-repeat;
-  background-position: left -20% center;
-  background-size: contain;
-}
-
-
 hr {
   height: 0;
   /* 1 */
@@ -651,6 +579,71 @@ video {
 .container{
   width: 100%;
   max-width: 1280px;
+}
+
+/* Backgrounds */
+
+.yellowBlushRight {
+  background-image: url(./assets/icons/global/fullBlushYellow.svg);
+  background-position: right 180% center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.yellowBlushLeft {
+  background-image: url(./assets/icons/global/blushYellowLeft.svg);
+  background-position: left 200% center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+.radialLeft{
+  background-image: url(./assets/icons/global/radialFull.svg);
+  background-repeat: no-repeat;
+  background-position: left -20% center;
+  background-size: contain;
+}
+
+.radialLeftSmall{
+  background-image: url(./assets/icons/global/radialFull.svg);
+  background-repeat: no-repeat;
+  background-position: left -20% center;
+  background-size: 40%;
+}
+
+.radialRight{
+  background-image: url(./assets/icons/global/radialFull.svg);
+  background-repeat: no-repeat;
+  background-position: right -20% center;
+  background-size: contain;
+}
+
+.blueBlushRight {
+  background-image: url(./assets/icons/global/blushBlueFull.svg);
+  background-repeat: no-repeat;
+  background-position: right -180% center;
+  background-size: contain;
+}
+
+.blueBlushRightSmall {
+  background-image: url(./assets/icons/global/blushBlueFull.svg);
+  background-repeat: no-repeat;
+  background-position: right -50% center;
+  background-size: contain;
+}
+
+.blueBlushLeft {
+  background-image: url(./assets/icons/global/blushBlueFull.svg);
+  background-repeat: no-repeat;
+  background-position: left -200% center;
+  background-size: contain;
+}
+
+.blueBlushLeftBig {
+  background-image: url(./assets/icons/global/blushBlueFull.svg);
+  background-repeat: no-repeat;
+  background-position: left -300% center;
+  background-size: contain;
 }
 
 .fixed{
@@ -1243,6 +1236,10 @@ video {
 }
 
 .bg-\[\#1E1E20\]\/70{
+  background-color: rgb(30 30 32 / 0.7);
+}
+
+.bg-\[\#1e1e20e6\]\/70{
   background-color: rgb(30 30 32 / 0.7);
 }
 
@@ -2421,3 +2418,5 @@ svg {
     line-height: 1.5;
   }
 }
+
+
