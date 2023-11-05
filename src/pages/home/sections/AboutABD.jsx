@@ -19,6 +19,7 @@ const AboutABD = () => {
                         BGM is an onshore software development company with offices located in
                         Makati, Quezon City, and Cebu City Philippines. We provide high-quality web
                         clients applications using leading-edge technology since 2023.
+                        {/* hi */}
                     </p>
                 </div>
             </div>
